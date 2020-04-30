@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "网络唤醒";
+
+    var hasError = Convert.ToBoolean(ViewData["HasError"]);
+    var messageStyle = "color:deepskyblue";
+
+    if (hasError)
+    {
+        messageStyle = "color:red";
+    }
+}
+
+<div class="text-center">
+    <p>在下方输入通电的物理网卡的MAC地址（例如：00-E0-4C-27-CC-64或00:E0:4C:27:CC:64），然后点击唤醒，等待一会尝试远程操作你的电脑。</p>
+    <br />
+    <br />
+    <form method="post">
+        MAC地址: <input type="text" asp-for="Mac.Value" />
+        <input type="submit" value="唤醒" />
+        <br />
+        <span style="@messageStyle">@ViewData["Message"]</span>
+    </form>
+</div>
