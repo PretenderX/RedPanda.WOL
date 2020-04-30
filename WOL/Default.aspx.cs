@@ -2,7 +2,7 @@
 using System;
 using System.Web.UI;
 
-namespace WOL
+namespace RedPanda.WOL
 {
     public partial class _Default : Page
     {

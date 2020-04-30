@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WOL
+namespace RedPanda.WOL
 {
     public partial class SiteMaster : MasterPage
     {

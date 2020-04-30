@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WOL.Core
+namespace RedPanda.WOL.Core
 {
     public class Program
     {

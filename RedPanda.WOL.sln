@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOL", "WOL\WOL.csproj", "{B2B839C9-C76F-4E67-B4D4-7394DCC1E744}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedPanda.WOL", "WOL\RedPanda.WOL.csproj", "{B2B839C9-C76F-4E67-B4D4-7394DCC1E744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOL.Core", "WOL.Core\WOL.Core.csproj", "{364325D9-A539-486F-A1F4-2F766091B066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedPanda.WOL.Core", "WOL.Core\RedPanda.WOL.Core.csproj", "{364325D9-A539-486F-A1F4-2F766091B066}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

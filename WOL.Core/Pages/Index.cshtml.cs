@@ -3,9 +3,9 @@ using Derungsoft.WolSharp;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WOL.Core.Model;
+using RedPanda.WOL.Core.Model;
 
-namespace WOL.Core.Pages
+namespace RedPanda.WOL.Core.Pages
 {
     public class IndexModel : PageModel
     {

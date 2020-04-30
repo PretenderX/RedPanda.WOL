@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace WOL
+namespace RedPanda.WOL
 {
     public class Global : HttpApplication
     {

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="WOL.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="RedPanda.WOL.Global" Language="C#" %>

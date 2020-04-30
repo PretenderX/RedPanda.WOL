@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace WOL
+namespace RedPanda.WOL
 {
     public class BundleConfig
     {

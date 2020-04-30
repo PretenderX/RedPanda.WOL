@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace WOL.Core
+namespace RedPanda.WOL.Core
 {
     public class Startup
     {

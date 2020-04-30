@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WOL
+namespace RedPanda.WOL
 {
 
 

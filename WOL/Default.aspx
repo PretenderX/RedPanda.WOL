@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WOL._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RedPanda.WOL._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -9,7 +9,6 @@
         <asp:Label ID="Label1" runat="server" Text="MAC地址："></asp:Label>
         <asp:TextBox ID="macAddress" runat="server"></asp:TextBox>
         <asp:Button ID="btnWakeUp" runat="server" OnClick="btnWakeUp_Click" Text="唤醒" />
-         <br />
         <asp:Label ID="msgLabel" runat="server" ForeColor="#3399FF"></asp:Label>
     </div>
 

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WOL.Core.Model
+namespace RedPanda.WOL.Core.Model
 {
     public class MacAddress
     {
