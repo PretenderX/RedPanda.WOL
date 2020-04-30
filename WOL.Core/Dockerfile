@@ -6,16 +6,16 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["WOL.Core/WOL.Core.csproj", "WOL.Core/"]
-RUN dotnet restore "WOL.Core/WOL.Core.csproj"
+COPY ["RedPanda.WOL.Core/RedPanda.WOL.Core.csproj", "RedPanda.WOL.Core/"]
+RUN dotnet restore "RedPanda.WOL.Core/RedPanda.WOL.Core.csproj"
 COPY . .
-WORKDIR "/src/WOL.Core"
-RUN dotnet build "WOL.Core.csproj" -c Release -o /app/build
+WORKDIR "/src/RedPanda.WOL.Core"
+RUN dotnet build "RedPanda.WOL.Core.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WOL.Core.csproj" -c Release -o /app/publish
+RUN dotnet publish "RedPanda.WOL.Core.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WOL.Core.dll"]
+ENTRYPOINT ["dotnet", "RedPanda.WOL.Core.dll"]
