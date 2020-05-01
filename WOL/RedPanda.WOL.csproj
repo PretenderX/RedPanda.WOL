@@ -210,6 +210,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedPanda.WOL.Sender\RedPanda.WOL.Sender.csproj">
+      <Project>{fdc17de5-a79f-4e82-b197-37cc5f558be4}</Project>
+      <Name>RedPanda.WOL.Sender</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

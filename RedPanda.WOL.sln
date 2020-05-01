@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedPanda.WOL", "WOL\RedPand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedPanda.WOL.Core", "WOL.Core\RedPanda.WOL.Core.csproj", "{364325D9-A539-486F-A1F4-2F766091B066}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedPanda.WOL.Sender", "RedPanda.WOL.Sender\RedPanda.WOL.Sender.csproj", "{FDC17DE5-A79F-4E82-B197-37CC5F558BE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{364325D9-A539-486F-A1F4-2F766091B066}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{364325D9-A539-486F-A1F4-2F766091B066}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{364325D9-A539-486F-A1F4-2F766091B066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC17DE5-A79F-4E82-B197-37CC5F558BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC17DE5-A79F-4E82-B197-37CC5F558BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC17DE5-A79F-4E82-B197-37CC5F558BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC17DE5-A79F-4E82-B197-37CC5F558BE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

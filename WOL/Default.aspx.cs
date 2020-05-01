@@ -1,4 +1,4 @@
-﻿using Derungsoft.WolSharp;
+﻿using RedPanda.WOL.Sender;
 using System;
 using System.Web.UI;
 
@@ -12,32 +12,13 @@ namespace RedPanda.WOL
 
         protected void btnWakeUp_Click(object sender, EventArgs e)
         {
-            var macAddress = this.macAddress.Text;
+            var mac = new MacAddress { Value = this.macAddress.Text };
 
-            if (string.IsNullOrEmpty(macAddress))
-            {
-                msgLabel.Text = "MAC地址不能为空！";
+            var wolSender = new WOLSender();
 
-                return;
-            }
-
-            if (macAddress.Contains(":"))
-            {
-                macAddress = macAddress.Replace(":", "-");
-            }
-
-            if (macAddress.Split('-').Length != 6)
-            {
-                msgLabel.Text = "MAC地址格式错误！";
-
-                return;
-            }
-
-            var awakener = new Awakener();
-
-            awakener.Wake(macAddress);
-
-            msgLabel.Text = "唤醒指令发送成功！";
+            var hasError = !wolSender.Send(mac, out var message);
+            
+            msgLabel.Text = message;
         }
     }
 }
